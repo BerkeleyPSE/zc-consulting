@@ -11,21 +11,20 @@
 	<meta name="description" content="ZC Consulting works with clients to deliver projects.">
 	<meta name="keywords" content="Pi Sigma Epsilon, UC Berkeley Pi Sigma Epsilon, Berkeley PSE, Berkeley Pi Sigma Epsilon, ZC Consulting, consulting, berkeley">
 	<meta name="url" content="http://zc-consulting.org">
-	<meta name="Reply-to" content="">
+	<meta name="Reply-to" content="berkeleypse.pr@gmail.com">
 	<meta name="copyright" content="ZC Consulting - Pi Sigma Epsilon">
 
 	<!--FAVICON-->
-	<link rel="shortcut icon" href="images/favicon.ico"/>
+<!--	<link rel="shortcut icon" href="images/favicon.ico"/>-->
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Import Materialize CSS -->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	
 	<!--STYLESHEETS-->
-	<link rel="stylesheet" href="css/bootstrap.css"/>
-	<link rel="stylesheet" href="css/stylesheet.css"/>
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			
-	<!-- Bootstrap JavaScript library-->
-	<script src="js/bootstrap.js" type="text/javascript"></script>
+	 <link rel="stylesheet" href="css/stylesheet.css"/> 
 	
 	<!--GOOGLE FONTS-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -35,39 +34,239 @@
 
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navigation-bar">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigator" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-			</button>
-			<a id="ZC" class="navbar-brand" href="#top">ZC Consulting</a>
-		</div>
-		<div class="collapse navbar-collapse" id="navigator">
-			<ul id="main-navigation" class="nav navbar-nav navbar-right">
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#process">Process</a></li>
-				<li><a href="#clients">Clients</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
+<!-- Import jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Import Materialize JS -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+<nav>
+	<div class="nav-wrapper blue-grey darken-4 z-depth-4">
+		<a href="#" class="brand-logo raleway" id="ZC">ZC Consulting</a>
+		<ul id="navbar" class="right hide-on-med-and-down open-sans">
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#clients">Clients</a></li>						
+			<li><a href="#method">Method</a></li>						
+			<li><a href="#contact">Contact</a></li>						
+		</ul>
 	</div>
 </nav>
 
-<div id="top">
-	<img src="images/san-francisco.jpg" width="1440" height="730" alt="San Francisco - the home of our consultants" />
-	<div class="text-center text-white" id="header">
-		<h1>ZC Consulting</h1>
-		<h2>The best consultants in the world</h2>
+<!--LANDING-->
+<div>
+	<img class="responsive-img" src="images/san-francisco.jpg" alt="" id="cover" height="700" width="1440" />
+	<div class="valign-wrapper white-text" id="cover-text">
+		<div class="center center-align">
+			<h1 class="raleway" id="header">ZC Consulting</h1>
+			<h3 class="open-sans" id="tagline">Harnessing Fresh Perspectives to Craft Tailored Solutions</h3>
+		</div>
 	</div>
 </div>
 
 
+<!--ABOUT-->
+<div class="page" id="about">
+	
+	<div class="row">
+		<div class="col s10 offset-s1 m10 offset-m1">
+			<h2 class="h-text raleway">Intro</h2>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col s12 m10 offset-m1 l6 offset-l1">
+			<p class="p-text flow-text open-sans" id="about-text">
+			Established in 2013 as a branch of Pi Sigma Epsilon, ZC Consulting is a strategy consulting organization run entirely by students of UC Berkeley. With our diverse backgrounds and analytical rigor, we offer cutting-edge research and powerful solutions to our clients.
+			<br> <br>
+			Our mission is to collaborate with the goals and vision of individual businesses to develop creative solutions that satisfy the needs of our clients and their stakeholders.
+			</p>
+		</div>
+		<div class="col s10 offset-s1 offset-m2 m6 offset-m3 l4">
+			<img class="responsive-img" src="images/VSCO.jpg" alt="Our team's presentation at VSCO headquarters in San Francisco." />
+		</div>
+	</div>
+	
+</div>
 
+
+<!--SERVICES-->
+<div class="page page-dark" id="services">
+
+	<div class="row">
+		<div class="col s10 offset-s1 m10 offset-m1">
+			<h2 class="h-text raleway">Services</h2>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col s8 offset-s2 m4 offset-m2 l3">
+			<a href="#BM-modal" class="modal-trigger modal-link">
+				<div class="icon-container"><i class="large material-icons">star</i></div>
+				<h5 class="open-sans center-align icon-text">Branding &amp; Marketing</h5>
+			</a>
+		</div>
+		<div class="col s8 offset-s2 m4 l3">
+			<a href="#MR-modal" class="modal-trigger modal-link">
+				<div class="icon-container"><i class="large material-icons">search</i></div>
+				<h5 class="open-sans center-align icon-text">Market Research</h5>
+			</a>
+		</div>
+		<div class="col s8 offset-s2 m4 offset-m2 l3">
+			<a href="#S-modal" class="modal-trigger modal-link">
+				<div class="icon-container"><i class="large material-icons">lightbulb_outline</i></div>
+				<h5 class="open-sans center-align icon-text">Strategy &amp; Planning</h5>
+			</a>
+		</div>
+		<div class="col s8 offset-s2 m4 l3">
+			<a href="#CA-modal" class="modal-trigger modal-link">
+				<div class="icon-container"><i class="large material-icons">insert_chart</i></div>
+				<h5 class="open-sans center-align icon-text">Competitor Analysis</h5>
+			</a>
+		</div>	
+	</div>
+
+</div>
+
+<!--CLIENTS-->
+<div class="page" id="clients">
+	
+	<div class="row">
+		<div class="col s10 offset-s1 m10 offset-m1">
+			<h2 class="h-text raleway">Past Clients</h2>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col s10 offset-s1 m10 offset-m1 l10 offset-l1 center-align">
+			<ul id="logo-list" class="center-align">
+				<li><img src="images/logos/underarmour.png" alt="Under Armour" height="180" width="240" class="responsive-img"/></li>
+				<li><img src="images/logos/magoosh.png" alt="Magoosh" height="91" width="400" class="responsive-img"/></li>
+				<li><img src="images/logos/vsco.png" alt="VSCO" height="218" width="175" class="responsive-img"/></li>
+				<li><img src="images/logos/pieology.png" alt="Pieology" height="200" width="200" class="responsive-img"/></li>
+				<li><img src="images/logos/coursehero.png" alt="Course Hero" height="166" width="298" class="responsive-img"/></li>
+				<li><img src="images/logos/mindsumo.png" alt="Mindsumo" height="61" width="400" class="responsive-img"/></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+<!--CONTACT-->
+
+<div class="page page-dark" id="contact">
+
+	<div class="row">
+		<div class="col s10 offset-s1 m10 offset-m1">
+			<h2 class="h-text raleway">Contact Us</h2>
+		</div>
+	</div>
+	
+</div>
+
+
+<!--MODALS-->
+<div id="BM-modal" class="modal">
+	<div class="modal-content">
+		<h4 class="h-text raleway">Branding &amp; Marketing</h4>
+		<div class="modal-icon-container">
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">share</i>
+				<h5 class="p-text open-sans">Social Media</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">web</i>
+				<h5 class="p-text open-sans">Website Design</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">brush</i>
+				<h5 class="p-text open-sans">Graphic Design</h5>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+	</div>
+</div>
+
+<div id="MR-modal" class="modal">
+	<div class="modal-content">
+		<h4 class="h-text raleway">Market Research</h4>
+		<div class="modal-icon-container">
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">share</i>
+				<h5 class="p-text open-sans">Social Media</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">web</i>
+				<h5 class="p-text open-sans">Website Design</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">brush</i>
+				<h5 class="p-text open-sans">Graphic Design</h5>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+	</div>
+</div>
+
+<div id="S-modal" class="modal">
+	<div class="modal-content">
+		<h4 class="h-text raleway">Strategy &amp; Planning</h4>
+		<div class="modal-icon-container">
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">multiline_chart</i>
+				<h5 class="p-text open-sans">Business Modelling</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">attach_money</i>
+				<h5 class="p-text open-sans">Monetization</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">brush</i>
+				<h5 class="p-text open-sans">Graphic Design</h5>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+	</div>
+</div>
+
+<div id="CA-modal" class="modal">
+	<div class="modal-content">
+		<h4 class="h-text raleway">Competitor Analysis</h4>
+		<div class="modal-icon-container">
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">share</i>
+				<h5 class="p-text open-sans">Social Media</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">web</i>
+				<h5 class="p-text open-sans">Website Design</h5>
+			</div>
+			<div class="icon-container modal-icon">
+				<i class="large material-icons">brush</i>
+				<h5 class="p-text open-sans">Graphic Design</h5>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+	</div>
+</div>
+
+<script>
+$(document).ready(function() {
+	$('#BM-modal').modal();
+	$('#MR-modal').modal();
+	$('#S-modal').modal();
+	$('#CA-modal').modal();
+});	
+
+</script>
 
 </body>
 </html>

@@ -3,73 +3,161 @@
 
 /* === NAVIGATION BAR === */
 
-#navigation-bar {
-	background-color: rgba(0, 0, 0, 0);
-	box-shadow: none;
-	border: none;
-	font-family: "Raleway", sans-serif;
-	font-size: 1.5em;
-	font-weight: 700;
-	letter-spacing: 0.025em;
-	margin: 1% 2% 0;
+a#ZC {
+	margin-left: 1rem;
 }
 
-#main-navigation li a {
-	color: white;
+ul#navbar li {
+	margin: 0 0.25rem;
 }
 
-#ZC {
-	color: white;
-	font-size: 1.75em;
-	font-weight: 500;
+ul#navbar li a {
+	font-size: 1rem;
+/*	letter-spacing: 0.040rem;*/
+/*	text-transform: uppercase;*/
 }
 
 /*** END OF NAVIGATION BAR ***/
 
 /*** === LANDING PAGE ***/
 
-#top {
-	position: relative;
-}
-
-#header {
+div#cover-text {
 	background-color: rgba(0, 0, 0, 0.5);
-	margin: auto;
-/*	width: 100%;*/
-	padding: 3% 5%;
+/*	letter-spacing: 0.040rem;*/
+	
+	/* positions the elements inside the box */
+	display: flex;
+	justify-content: center;
+	
+	
+	/* positions the box itself */
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	
+	/* makes the box end-to-end */
+	padding: 40px 0;
+	width: 100%;
 }
 
-#header h1 {
-	font-size: 7em;
+/*** END OF LANDING PAGE ***/
+
+/*** === ABOUT SECTION === ***/
+
+p#about-text {
+	font-size: 1.5rem;
 }
 
-#header h2 {
-	font-family: "Open Sans", sans-serif;
-	font-size: 3em;
+/*** === END OF ABOUT SECTION === ***/
+
+/*** === SERVICES SECTION === ***/
+
+div#icon-row {
+	display: flex;
+	align-items: center;
 }
+
+.icon-container {
+	text-align: center;
+}
+
+.modal-link {
+	color: #455a64;
+	
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.modal-link:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.icon-text {
+	color: #680E4B;
+}
+
+.modal-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-icon {
+	margin: 2rem 3rem;
+}
+
+/*** END OF SERVICES SECTION ***/
+
+/*** === CLIENTS SECTION === ***/
+
+ul#logo-list li {
+	display: inline;
+	padding: 1em 2em;
+}
+
+
+/*** END OF CLIENTS SECTION ***/
 
 /*** === BUILT IN CLASSES === ***/
 
-body {
+.body, .html {
+	font-family: "Raleway", sans-serif;
+	font-size: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
-}
-
-h1, h2, h3, h4 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 700;
-	letter-spacing: 0.035em;
+	letter-spacing: 0.035rem;
 }
 
 /*** END OF BUILT IN CLASSES ***/
 
 /*** CLASSES ***/
 
-.text-white {
-	color: white;
+.raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.h-text {
+	color: #263238;
+/*	color: #42033D;*/
+	margin-bottom: 0;
+}
+
+.p-text {
+/*	color: #455a64;*/
+	color: #680E4B;
+}
+
+.page {
+	padding: 2rem 0 3rem 0;
+}
+
+.page-dark {
+	background-color: #E0E0E0;
+}
+
+/*** === MEDIA QUERIES === ***/
+
+@media (min-width: 320px) {
+	
+	h1 { font-size: 2.5rem; }
+	
+	h3 { font-size: 2rem; }
+	
+}
+
+@media (min-width: 768px) {
+	
+	h1 { font-size: 4rem; }
+	
+	h3 { font-size: 2.5rem; }
 }
