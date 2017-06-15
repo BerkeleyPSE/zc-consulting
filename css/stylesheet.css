@@ -13,8 +13,6 @@ ul#navbar li {
 
 ul#navbar li a {
 	font-size: 1rem;
-/*	letter-spacing: 0.040rem;*/
-/*	text-transform: uppercase;*/
 }
 
 /*** END OF NAVIGATION BAR ***/
@@ -49,6 +47,9 @@ p#about-text {
 	font-size: 1.5rem;
 }
 
+img#team { 
+	padding: 2.5rem 0 0 0;
+}
 /*** === END OF ABOUT SECTION === ***/
 
 /*** === SERVICES SECTION === ***/
@@ -77,8 +78,12 @@ div#icon-row {
 	cursor: pointer;
 }
 
+.icon {
+	color: #455a64;
+}
+
 .icon-text {
-	color: #680E4B;
+	color: black;
 }
 
 .modal-icon-container {
@@ -89,6 +94,10 @@ div#icon-row {
 
 .modal-icon {
 	margin: 2rem 3rem;
+}
+
+div#proj-examples {
+	padding: 3rem 0 0 0;
 }
 
 /*** END OF SERVICES SECTION ***/
@@ -114,6 +123,14 @@ ul#logo-list li {
 	letter-spacing: 0.035rem;
 }
 
+a {
+	color: #42033D;
+}
+
+img {
+	max-width: 100%;
+}
+
 /*** END OF BUILT IN CLASSES ***/
 
 /*** CLASSES ***/
@@ -128,13 +145,11 @@ ul#logo-list li {
 
 .h-text {
 	color: #263238;
-/*	color: #42033D;*/
-	margin-bottom: 0;
+	margin-bottom: 1rem;
 }
 
 .p-text {
-/*	color: #455a64;*/
-	color: #680E4B;
+	color: #455a64;
 }
 
 .page {
@@ -143,6 +158,14 @@ ul#logo-list li {
 
 .page-dark {
 	background-color: #E0E0E0;
+}
+
+.pad {
+	padding: 2rem 0 0 0;
+}
+
+.align-center {
+	text-align: center;
 }
 
 /*** === MEDIA QUERIES === ***/

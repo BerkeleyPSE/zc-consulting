@@ -47,7 +47,7 @@
 			<li><a href="#about">About</a></li>
 			<li><a href="#services">Services</a></li>
 			<li><a href="#clients">Clients</a></li>						
-			<li><a href="#method">Method</a></li>						
+			<!-- <li><a href="#method">Method</a></li> -->
 			<li><a href="#contact">Contact</a></li>						
 		</ul>
 	</div>
@@ -55,7 +55,7 @@
 
 <!--LANDING-->
 <div>
-	<img class="responsive-img" src="images/san-francisco.jpg" alt="" id="cover" height="700" width="1440" />
+	<img class="" src="images/san-francisco.jpg" alt="" id="cover" height="700" width="1440" />
 	<div class="valign-wrapper white-text" id="cover-text">
 		<div class="center center-align">
 			<h1 class="raleway" id="header">ZC Consulting</h1>
@@ -77,13 +77,13 @@
 	<div class="row">
 		<div class="col s12 m10 offset-m1 l6 offset-l1">
 			<p class="p-text flow-text open-sans" id="about-text">
-			Established in 2013 as a branch of Pi Sigma Epsilon, ZC Consulting is a strategy consulting organization run entirely by students of UC Berkeley. With our diverse backgrounds and analytical rigor, we offer cutting-edge research and powerful solutions to our clients.
+			Established in 2013 as a branch of <a href="http://berkeleypse.org" target="_blank">Pi Sigma Epsilon </a>, ZC Consulting is a strategy consulting organization run entirely by students of UC Berkeley. We are an educational non-profit focused on the academic and professional development of both our members and student community. Through our diverse backgrounds and analytical rigor, we offer cutting-edge research and powerful solutions to our clients.
 			<br> <br>
 			Our mission is to collaborate with the goals and vision of individual businesses to develop creative solutions that satisfy the needs of our clients and their stakeholders.
 			</p>
 		</div>
 		<div class="col s10 offset-s1 offset-m2 m6 offset-m3 l4">
-			<img class="responsive-img" src="images/VSCO.jpg" alt="Our team's presentation at VSCO headquarters in San Francisco." />
+			<img id="team" class="responsive-img materialboxed" src="images/VSCO.jpg" alt="Our team's presentation at VSCO headquarters in San Francisco." />
 		</div>
 	</div>
 	
@@ -108,8 +108,8 @@
 		</div>
 		<div class="col s8 offset-s2 m4 l3">
 			<a href="#MR-modal" class="modal-trigger modal-link">
-				<div class="icon-container"><i class="large material-icons">search</i></div>
-				<h5 class="open-sans center-align icon-text">Market Research</h5>
+                <div class="icon-container"><i class="large material-icons">search</i></div>
+                <h5 class="open-sans center-align icon-text">Market Research</h5>
 			</a>
 		</div>
 		<div class="col s8 offset-s2 m4 offset-m2 l3">
@@ -121,10 +121,23 @@
 		<div class="col s8 offset-s2 m4 l3">
 			<a href="#CA-modal" class="modal-trigger modal-link">
 				<div class="icon-container"><i class="large material-icons">insert_chart</i></div>
-				<h5 class="open-sans center-align icon-text">Competitor Analysis</h5>
+                <h5 class="open-sans center-align icon-text">Competitor Analysis</h5>
 			</a>
 		</div>	
 	</div>
+
+    <div class="row">
+       <p class="p-text flow-text open-sans align-center pad">We offer these services and more! Here are some of our past deliverables.</p>
+    </div>
+
+    <div class="row" id="proj-examples">
+        <div class="col s8 offset-s2 m5 offset-m1 l5 offset-l1">
+            <img class="responsive-img materialboxed" src="images/ex1.png" />
+        </div>
+        <div class="col s8 offset-s2 m5 l5">
+            <img class="responsive-img materialboxed" src="images/ex2.png" width="800" height="450"/>
+        </div>
+    </div>    
 
 </div>
 
@@ -164,6 +177,15 @@
 	
 </div>
 
+<!-- FOOTER -->
+<footer class="page-footer page blue-grey darken-4">
+    <div class="row">
+        <div class="footer-copyright col sm-8 offset-s1 blue-grey darken-4 open-sans">
+            ©2017. All rights reserved. ZC Consulting, Pi Sigma Epsilon, Zeta Chi Chapter.
+        </div>
+    </div>
+</footer>
+
 
 <!--MODALS-->
 <div id="BM-modal" class="modal">
@@ -171,21 +193,21 @@
 		<h4 class="h-text raleway">Branding &amp; Marketing</h4>
 		<div class="modal-icon-container">
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">share</i>
+				<i class="large material-icons icon">share</i>
 				<h5 class="p-text open-sans">Social Media</h5>
 			</div>
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">web</i>
-				<h5 class="p-text open-sans">Website Design</h5>
+				<i class="large material-icons icon">face</i>
+				<h5 class="p-text open-sans">User Acquisition</h5>
 			</div>
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">brush</i>
+				<i class="large material-icons icon">brush</i>
 				<h5 class="p-text open-sans">Graphic Design</h5>
 			</div>
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		<a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
 	</div>
 </div>
 
@@ -194,21 +216,21 @@
 		<h4 class="h-text raleway">Market Research</h4>
 		<div class="modal-icon-container">
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">share</i>
-				<h5 class="p-text open-sans">Social Media</h5>
+				<i class="large material-icons icon">sentiment_very_satisfied</i>
+				<h5 class="p-text open-sans">Customer Feedback</h5>
 			</div>
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">web</i>
-				<h5 class="p-text open-sans">Website Design</h5>
+				<i class="large material-icons icon">whatshot</i>
+				<h5 class="p-text open-sans">Consumer Trends</h5>
 			</div>
-			<div class="icon-container modal-icon">
-				<i class="large material-icons">brush</i>
-				<h5 class="p-text open-sans">Graphic Design</h5>
-			</div>
+            <div class="icon-container modal-icon">
+                <i class="large material-icons icon">highlight</i>
+                <h5 class="p-text open-sans">Industry Analysis</h5>
+            </div>
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		<a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
 	</div>
 </div>
 
@@ -217,21 +239,21 @@
 		<h4 class="h-text raleway">Strategy &amp; Planning</h4>
 		<div class="modal-icon-container">
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">multiline_chart</i>
-				<h5 class="p-text open-sans">Business Modelling</h5>
+				<i class="large material-icons icon">show_chart</i>
+				<h5 class="p-text open-sans">Business Modeling</h5>
 			</div>
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">attach_money</i>
+				<i class="large material-icons icon">attach_money</i>
 				<h5 class="p-text open-sans">Monetization</h5>
 			</div>
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">brush</i>
-				<h5 class="p-text open-sans">Graphic Design</h5>
+				<i class="large material-icons icon">build</i>
+				<h5 class="p-text open-sans">Feature Prioritization</h5>
 			</div>
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		<a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
 	</div>
 </div>
 
@@ -240,21 +262,21 @@
 		<h4 class="h-text raleway">Competitor Analysis</h4>
 		<div class="modal-icon-container">
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">share</i>
-				<h5 class="p-text open-sans">Social Media</h5>
+				<i class="large material-icons icon">compare_arrows</i>
+				<h5 class="p-text open-sans">Competitive Landscape</h5>
 			</div>
 			<div class="icon-container modal-icon">
-				<i class="large material-icons">web</i>
-				<h5 class="p-text open-sans">Website Design</h5>
+				<i class="large material-icons icon">fullscreen</i>
+				<h5 class="p-text open-sans">White Space Analysis</h5>
 			</div>
-			<div class="icon-container modal-icon">
-				<i class="large material-icons">brush</i>
-				<h5 class="p-text open-sans">Graphic Design</h5>
-			</div>
+            <div class="icon-container modal-icon">
+                <i class="large material-icons icon">create</i>
+                <h5 class="p-text open-sans">Product Research</h5>
+            </div>
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		<a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
 	</div>
 </div>
 
