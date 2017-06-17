@@ -19,14 +19,16 @@ ul#navbar li a {
 
 /*** === LANDING PAGE ***/
 
+div#landing {
+	position: relative;
+}
+
 div#cover-text {
-	background-color: rgba(0, 0, 0, 0.5);
-/*	letter-spacing: 0.040rem;*/
+	background-color: rgba(0, 0, 0, 0.6);
 	
 	/* positions the elements inside the box */
 	display: flex;
 	justify-content: center;
-	
 	
 	/* positions the box itself */
 	position: absolute;
@@ -35,7 +37,7 @@ div#cover-text {
 	transform: translate(-50%, -50%);
 	
 	/* makes the box end-to-end */
-	padding: 40px 0;
+	padding: 30px 0;
 	width: 100%;
 }
 
@@ -96,8 +98,8 @@ div#icon-row {
 	margin: 2rem 3rem;
 }
 
-div#proj-examples {
-	padding: 3rem 0 0 0;
+.proj-ex {
+	padding: 1rem 0 0 0;
 }
 
 /*** END OF SERVICES SECTION ***/
@@ -106,7 +108,7 @@ div#proj-examples {
 
 ul#logo-list li {
 	display: inline;
-	padding: 1em 2em;
+	padding: 0 2em;
 }
 
 
@@ -173,9 +175,9 @@ img {
 
 @media (min-width: 320px) {
 	
-	h1 { font-size: 2.5rem; }
+	h1 { font-size: 1.85rem; }
 	
-	h3 { font-size: 2rem; }
+	h3 { font-size: 1.35rem; }
 	
 }
 
